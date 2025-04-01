@@ -13,13 +13,47 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
+        // Find the buttons and text views by their IDs
        val resetButton = findViewById<Button>(R.id.btnReset)
        val suggestButton = findViewById<Button>(R.id.btnSuggestMeal)
        val displayMeals = findViewById<TextView>(R.id.txtDisplayMeals)
-       val userInput = findViewById<TextView>(R.id.edtUserInput)
+       val userInput = findViewById<TextView>(R.id.userInput)
 
+        //this button will generate a meal suggestion based on the user input
+        suggestButton.setOnClickListener {
+            //mealOptions stores the user input from the edit text
+            val mealOptions = userInput.text.toString()
+            // if the user inputs MORNING then the meal options below will be displayed
+            if (mealOptions == "MORNING") {
+                // these are the meal options that will be displayed
+                displayMeals.text="Breakfast meal suggestion: Oatmeal, Eggs, Toast, Cereal"
+                // else if the user inputs MID-MORNING then the meal options below will be displayed
+            }else if (mealOptions == "MID-MORNING") {
+                // these are the meal options that will be displayed
+                displayMeals.text="Mid-morning meal suggestion: Yogurt, Fruit, Granola"
+                // else if the user inputs AFTERNOON then the meal options below will be displayed
+            }else if (mealOptions == "AFTERNOON") {
+                // these are the meal options that will be displayed
+                displayMeals.text="Lunch meal suggestion: Sandwich, Salad, Wrap"
+                // else if the user inputs MID-AFTERNOON then the meal options below will be displayed
+            }else if (mealOptions == "MID-AFTERNOON") {
+                // these are the meal options that will be displayed
+                displayMeals.text="Mid-afternoon meal suggestion: Donut, Smoothie, Cake"
+                // else if the user inputs DINNER then the meal options below will be displayed
+            }else if (mealOptions == "DINNER") {
+                // these are the meal options that will be displayed
+                displayMeals.text="Dinner meal suggestion: Roast chicken, Pasta, Fish and chips"
+                // else if the user inputs DESSERT then the meal options below will be displayed
+            }else if (mealOptions == "DESSERT") {
+
+                displayMeals.text="Dessert meal suggestion: Ice cream, Cheesecake, Pudding"
+                // else the user will be asked to enter a meal option if they do not enter a meal option
+            }else displayMeals.text="Please enter a meal option"
+
+        }
+       // this button will reset the program and clear the text in the edit text and text view
        resetButton.setOnClickListener {
+           // this will clear the text in the edit text and text view
            displayMeals.text = ""
            userInput.text = ""
        }
