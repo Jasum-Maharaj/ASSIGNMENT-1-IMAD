@@ -19,6 +19,12 @@ class MainActivity : AppCompatActivity() {
        val displayMeals = findViewById<TextView>(R.id.txtDisplayMeals)
        val userInput = findViewById<TextView>(R.id.userInput)
 
+        //title: Kotlin if..else
+        //author: w3Schools
+        //date: 1/04/2025
+        //version: 1.0
+        //available: https://www.w3schools.com/kotlin/kotlin_conditions.php
+
         //this button will generate a meal suggestion based on the user input
         suggestButton.setOnClickListener {
             //mealOptions stores the user input from the edit text
@@ -57,6 +63,10 @@ class MainActivity : AppCompatActivity() {
            displayMeals.text = ""
            userInput.text = ""
        }
-
+                 //Title: adding clear button to edit text
+                 //Author: Dmytro Batyuk
+                 //Date: 1/04/2025
+                //Version: 1.0
+               //Available: https://medium.com/@dimabatyuk/adding-clear-button-to-edittext-9655e9dbb721
     }
 }
