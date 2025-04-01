@@ -5,55 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#8FD092"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/userInput"
-        android:layout_width="413dp"
-        android:layout_height="80dp"
+        android:layout_width="622dp"
+        android:layout_height="135dp"
         android:ems="10"
         android:hint="MORNING, MID-MORNING, AFTERNOON, MID-AFTERNOON, DINNER, DESSERT"
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/imgBackground"
-        android:layout_width="424dp"
-        android:layout_height="765dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <Button
         android:id="@+id/btnReset"
         android:layout_width="307dp"
         android:layout_height="75dp"
+        android:backgroundTint="#161266"
         android:text="RESET"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.817" />
 
     <Button
         android:id="@+id/btnSuggestMeal"
         android:layout_width="306dp"
         android:layout_height="78dp"
+        android:backgroundTint="#05136D"
         android:text="CLCIK HERE TO GENERATE A MEAL SUGGESTION"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="@+id/imgBackground"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.689" />
 
     <TextView
         android:id="@+id/txtDisplayMeals"
@@ -64,9 +55,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.471" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
