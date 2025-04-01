@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 displayMeals.text="Dinner meal suggestion: Roast chicken, Pasta, Fish and chips"
                 // else if the user inputs DESSERT then the meal options below will be displayed
             }else if (mealOptions == "DESSERT") {
-
+                // these are the meal options that will be displayed
                 displayMeals.text="Dessert meal suggestion: Ice cream, Cheesecake, Pudding"
                 // else the user will be asked to enter a meal option if they do not enter a meal option
             }else displayMeals.text="Please enter a time of day to get a meal suggestion"
